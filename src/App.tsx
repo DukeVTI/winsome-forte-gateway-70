@@ -22,8 +22,9 @@ const App = () => {
     // Check if user prefers reduced motion
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     
-    // Simulate loading time, shorter if reduced motion
-    const loadingTime = prefersReducedMotion ? 300 : 1200;
+    // Simulate loading time - allow enough time for progress animation to complete
+    // LoadingScreen progress takes ~4.5 seconds (100 steps * 45ms), so we wait 5 seconds
+    const loadingTime = prefersReducedMotion ? 1000 : 5000;
     
     const timer = setTimeout(() => {
       setIsLoading(false);
