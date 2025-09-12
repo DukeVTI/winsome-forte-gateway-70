@@ -7,7 +7,7 @@ import leaderPlaceholder from '@/assets/leader-placeholder.jpg';
 const About = () => {
   const milestones = [
     {
-      year: "[FOUNDING_YEAR_PLACEHOLDER: 1985]",
+      year: "2000",
       title: "Founded",
       description: "[MILESTONE_PLACEHOLDER: 'Established with a vision to provide exceptional education']"
     },
@@ -89,7 +89,7 @@ const About = () => {
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto">
               Discover our rich history, dedicated leadership, and commitment to 
-              educational excellence that spans nearly four decades.
+              educational excellence that spans over two decades.
             </p>
           </div>
         </div>
@@ -105,13 +105,13 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  [STORY_PLACEHOLDER: "Founded in 1985, Winsome Forte School began as a small institution with a big vision: to create an educational environment where academic rigor meets character development."]
+                  [STORY_PLACEHOLDER: "Founded in 2000, Winsome Forte School began as a small institution with a big vision: to create an educational environment where academic rigor meets character development."]
                 </p>
                 <p>
                   [STORY_PLACEHOLDER: "Over the decades, we have grown from a modest beginning to become one of the region's most respected educational institutions, while never losing sight of our core mission to nurture the whole child."]
                 </p>
                 <p>
-                  [STORY_PLACEHOLDER: "Today, WFS serves over 800 students from diverse backgrounds, united by a shared commitment to excellence, integrity, and service to others."]
+                  [STORY_PLACEHOLDER: "Today, WFS serves over 100 students from diverse backgrounds, united by a shared commitment to excellence, integrity, and service to others."]
                 </p>
               </div>
             </div>
