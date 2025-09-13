@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import wfsLogo from 'public/lovable-uploads/58004c73-576e-48fa-a140-59b6dca913b4.png';
+import wfsLogo from '@/assets/58004c73-576e-48fa-a140-59b6dca913b4.png';
 
 const Footer = () => {
   const quickLinks = [
