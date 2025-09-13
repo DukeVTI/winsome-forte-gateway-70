@@ -509,10 +509,10 @@ const Admissions = () => {
                   Admissions Office
                 </p>
                 <p className="text-muted-foreground">
-                  Email: [ADMISSIONS_EMAIL_PLACEHOLDER: admissions@winsomeforte.edu]
+                  Email: [admissions@winsomeforteschool.com]
                 </p>
                 <p className="text-muted-foreground">
-                  Phone: [ADMISSIONS_PHONE_PLACEHOLDER: (555) 123-4567]
+                  Phone: [+2345678910112]
                 </p>
                 <p className="text-muted-foreground text-sm">
                   Office Hours: Monday - Friday, 8:00 AM - 5:00 PM
