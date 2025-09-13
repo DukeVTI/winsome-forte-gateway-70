@@ -69,19 +69,19 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-primary-foreground/60" />
                 <span className="text-primary-foreground/80 text-sm">
-                  [ADDRESS_PLACEHOLDER: "123 Education Lane, Learning City, LC 12345"]
+                  123 Education Lane, Learning City, LC 12345
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-primary-foreground/60" />
                 <span className="text-primary-foreground/80 text-sm">
-                  [PHONE_PLACEHOLDER: "+1 (555) 123-4567"]
+                  +1 (555) 123-4567
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary-foreground/60" />
                 <span className="text-primary-foreground/80 text-sm">
-                  [EMAIL_PLACEHOLDER: "info@winsomeforte.edu"]
+                  admissions@winsomeforteschool.com
                 </span>
               </div>
             </div>
@@ -107,7 +107,7 @@ const Footer = () => {
             <div className="mt-6">
               <div className="w-full h-24 bg-primary-foreground/10 rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground/60 text-sm">
-                  [MAP_EMBED_PLACEHOLDER]
+                  Ogun State, Nigeria.
                 </span>
               </div>
             </div>
