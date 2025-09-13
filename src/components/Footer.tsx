@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import wfsLogo from '@/assets/wfs-logo.jpg';
+import wfsLogo from 'public/lovable-uploads/58004c73-576e-48fa-a140-59b6dca913b4.png';
 
 const Footer = () => {
   const quickLinks = [
@@ -41,7 +41,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/90 text-sm leading-relaxed">
-              [SCHOOL_DESCRIPTION_PLACEHOLDER: "Shaping tomorrow's leaders through academic excellence, character development, and innovative learning experiences."]
+              Shaping tomorrow's leaders through academic excellence, character development, and innovative learning experiences.
             </p>
           </div>
 
