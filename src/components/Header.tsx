@@ -47,7 +47,7 @@ const Header = () => {
           </div>
           <div className="hidden sm:block">
             <span className="text-xl font-display font-bold text-primary">
-              Winsome Forte School
+              Winsome-Forte School
             </span>
           </div>
         </Link>
@@ -98,7 +98,7 @@ const Header = () => {
                     />
                   </div>
                   <span className="text-lg font-display font-bold text-primary">
-                    Winsome Forte School
+                    Winsome-Forte School
                   </span>
                 </div>
 

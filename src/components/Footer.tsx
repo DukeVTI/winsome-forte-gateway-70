@@ -33,7 +33,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-display font-semibold">
-                  Winsome Forte School
+                  Winsome-Forte School
                 </h3>
                 <p className="text-primary-foreground/80 text-sm">
                   Excellence in Education
@@ -118,7 +118,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div className="text-primary-foreground/80 text-sm">
-              © 2024 Winsome Forte School. All rights reserved.
+              © 2024 Winsome-Forte School. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200">

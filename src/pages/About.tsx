@@ -85,7 +85,7 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-display font-semibold text-white mb-6">
-              About Winsome Forte School
+              About Winsome-Forte School
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto">
               Discover our rich history, dedicated leadership, and commitment to 
@@ -105,7 +105,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  [STORY_PLACEHOLDER: "Founded in 2000, Winsome Forte School began as a small institution with a big vision: to create an educational environment where academic rigor meets character development."]
+                  [STORY_PLACEHOLDER: "Founded in 2000, Winsome-Forte School began as a small institution with a big vision: to create an educational environment where academic rigor meets character development."]
                 </p>
                 <p>
                   [STORY_PLACEHOLDER: "Over the decades, we have grown from a modest beginning to become one of the region's most respected educational institutions, while never losing sight of our core mission to nurture the whole child."]
@@ -180,7 +180,7 @@ const About = () => {
               Leadership & Governance
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Meet the dedicated leaders who guide Winsome Forte School's mission and vision.
+              Meet the dedicated leaders who guide Winsome-Forte School's mission and vision.
             </p>
           </div>
 
@@ -221,7 +221,7 @@ const About = () => {
               Our Journey
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Key milestones in the history of Winsome Forte School.
+              Key milestones in the history of Winsome-Forte School.
             </p>
           </div>
 
@@ -260,7 +260,7 @@ const About = () => {
               Academic Philosophy
             </h2>
             <p className="text-xl text-muted-foreground">
-              [PHILOSOPHY_PLACEHOLDER: "At Winsome Forte School, we believe that true education goes beyond memorization and test scores. Our approach emphasizes critical thinking, creativity, collaboration, and character development."]
+              [PHILOSOPHY_PLACEHOLDER: "At Winsome-Forte School, we believe that true education goes beyond memorization and test scores. Our approach emphasizes critical thinking, creativity, collaboration, and character development."]
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">

@@ -114,7 +114,7 @@ const Admissions = () => {
                 Application Submitted!
               </h2>
               <p className="text-muted-foreground">
-                Thank you for your interest in Winsome Forte School. We've received your application 
+                Thank you for your interest in Winsome-Forte School. We've received your application 
                 and will contact you within 2-3 business days to schedule your next steps.
               </p>
             </div>
@@ -148,7 +148,7 @@ const Admissions = () => {
               Join Our Community
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto">
-              Begin your journey at Winsome Forte School. We're excited to learn more 
+              Begin your journey at Winsome-Forte School. We're excited to learn more 
               about you and welcome you to our exceptional learning community.
             </p>
           </div>
@@ -457,7 +457,7 @@ const Admissions = () => {
                               I agree to the processing of this information for admissions purposes *
                             </FormLabel>
                             <p className="text-xs text-muted-foreground">
-                              By checking this box, you consent to Winsome Forte School processing the provided information 
+                              By checking this box, you consent to Winsome-Forte School processing the provided information 
                               for admission evaluation and communication purposes.
                             </p>
                           </div>
