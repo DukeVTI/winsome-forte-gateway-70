@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, X } from 'lucide-react';
-const wfsLogo = '/lovable-uploads/58004c73-576e-48fa-a140-59b6dca913b4.png';
+import wfsLogo from '@/assets/58004c73-576e-48fa-a140-59b6dca913b4.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
