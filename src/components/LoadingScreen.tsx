@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import wfsLogo from '@/assets/58004c73-576e-48fa-a140-59b6dca913b4.png';
 
 const LoadingScreen = () => {
   const [progress, setProgress] = useState(0);
@@ -44,7 +45,7 @@ const LoadingScreen = () => {
         <div className="relative">
           <div className="w-36 h-36 mx-auto rounded-3xl bg-background/95 backdrop-blur-md border-2 border-primary/30 shadow-elegant flex items-center justify-center p-5 animate-scale-in">
             <img 
-              src="/lovable-uploads/58004c73-576e-48fa-a140-59b6dca913b4.png" 
+              src={wfsLogo}
               alt="Winsome-Forte School Logo"
               className="w-full h-full object-contain filter drop-shadow-sm"
             />
