@@ -129,6 +129,9 @@ Primary: Deep Purple, Secondary: Electric Blue, Accent: Coral
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* Removes the gray tap-highlight overlay Chrome shows on touch,
+       which was stacking with :hover styles and reading as "stuck" buttons. */
+    -webkit-tap-highlight-color: transparent;
   }
   
   h1, h2, h3, h4, h5, h6 {
