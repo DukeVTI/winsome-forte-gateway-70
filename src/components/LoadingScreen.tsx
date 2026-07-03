@@ -5,6 +5,8 @@ const LoadingScreen = () => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    // Matches the new ~400ms-1.2s real loading window in App.tsx (previously ~4.5s,
+    // which no longer matched once the artificial 5-second delay was removed).
     const timer = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
@@ -13,7 +15,7 @@ const LoadingScreen = () => {
         }
         return prev + 1;
       });
-    }, 45);
+    }, 12);
 
     return () => clearInterval(timer);
   }, []);
