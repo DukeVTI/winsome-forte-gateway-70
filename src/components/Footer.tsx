@@ -10,6 +10,8 @@ const Footer = () => {
     { name: 'Admissions', href: '/admissions' },
   ];
 
+  // TODO: These currently link to "#" (nowhere). Replace with real social URLs once
+  // Duke/the client confirms which platforms the school actually has, or remove unused ones.
   const socialLinks = [
     { name: 'Facebook', icon: Facebook, href: '#', label: 'Follow us on Facebook' },
     { name: 'Twitter', icon: Twitter, href: '#', label: 'Follow us on Twitter' },
@@ -41,7 +43,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/90 text-sm leading-relaxed">
-              Shaping tomorrow's leaders through academic excellence, character development, and innovative learning experiences.
+              A day school in Itoki, Ifo raising well-rounded students through discipline, character, and academic excellence — from Nursery through Senior Secondary.
             </p>
           </div>
 
@@ -69,21 +71,17 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-primary-foreground/60" />
                 <span className="text-primary-foreground/80 text-sm">
-                  123 Education Lane, Learning City, LC 12345
+                  Araromi Phase 1, Itoki, Ifo LGA, Ogun State
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-primary-foreground/60" />
                 <span className="text-primary-foreground/80 text-sm">
-                  +1 (555) 123-4567
+                  0803 231 9017
                 </span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-primary-foreground/60" />
-                <span className="text-primary-foreground/80 text-sm">
-                  admissions@winsomeforteschool.com
-                </span>
-              </div>
+              {/* TODO: Add real school email once Duke/client confirms one exists.
+                  Do not re-add a guessed email address here. */}
             </div>
           </div>
 
