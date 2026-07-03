@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -114,13 +115,13 @@ const Admissions = () => {
                 Application Submitted!
               </h2>
               <p className="text-muted-foreground">
-                Thank you for your interest in Winsome-Forte School. We've received your application 
+                Thank you for your interest in Winsome Model Schools. We've received your application 
                 and will contact you within 2-3 business days to schedule your next steps.
               </p>
             </div>
             <div className="bg-secondary p-4 rounded-lg">
               <p className="text-sm text-muted-foreground">
-                <strong>Reference ID:</strong> WFS-{Date.now().toString().slice(-8)}
+                <strong>Reference ID:</strong> WMS-{Date.now().toString().slice(-8)}
               </p>
             </div>
             <Button 
@@ -148,10 +149,24 @@ const Admissions = () => {
               Join Our Community
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto">
-              Begin your journey at Winsome-Forte School. We're excited to learn more 
+              Begin your journey at Winsome Model Schools. We're excited to learn more 
               about you and welcome you to our exceptional learning community.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Accreditation Trust Strip */}
+      <section className="py-10 bg-secondary border-y border-border">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-muted-foreground">
+            Winsome Model Schools is provisionally approved by the Ogun State Ministry of Education,
+            Science and Technology from Nursery through Senior Secondary level.{' '}
+            <Link to="/about" className="text-accent underline hover:text-accent/80">
+              View our accreditation letters
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
@@ -164,7 +179,7 @@ const Admissions = () => {
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Our streamlined admission process is designed to get to know your family 
-              and help you discover if WFS is the right fit.
+              and help you discover if Winsome Model Schools is the right fit.
             </p>
           </div>
 
@@ -457,7 +472,7 @@ const Admissions = () => {
                               I agree to the processing of this information for admissions purposes *
                             </FormLabel>
                             <p className="text-xs text-muted-foreground">
-                              By checking this box, you consent to Winsome-Forte School processing the provided information 
+                              By checking this box, you consent to Winsome Model Schools processing the provided information 
                               for admission evaluation and communication purposes.
                             </p>
                           </div>

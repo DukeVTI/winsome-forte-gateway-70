@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, X } from 'lucide-react';
-import wfsLogo from '@/assets/58004c73-576e-48fa-a140-59b6dca913b4.png';
+import wfsLogo from '@/assets/wms-logo.jpg';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,13 +41,13 @@ const Header = () => {
           <div className="w-10 h-10 rounded-2xl overflow-hidden border-2 border-primary/20 group-hover:border-primary/40 transition-all duration-300">
             <img 
               src={wfsLogo} 
-              alt="WFS Logo"
+              alt="Winsome Model Schools Logo"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="hidden sm:block">
             <span className="text-xl font-display font-bold text-primary">
-              Winsome-Forte School
+              Winsome Model Schools
             </span>
           </div>
         </Link>
@@ -93,12 +93,12 @@ const Header = () => {
                   <div className="w-10 h-10 rounded-2xl overflow-hidden border-2 border-primary/20">
                     <img 
                       src={wfsLogo} 
-                      alt="WFS Logo"
+                      alt="Winsome Model Schools Logo"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <span className="text-lg font-display font-bold text-primary">
-                    Winsome-Forte School
+                    Winsome Model Schools
                   </span>
                 </div>
 

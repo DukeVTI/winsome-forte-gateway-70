@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import wfsLogo from '@/assets/58004c73-576e-48fa-a140-59b6dca913b4.png';
+import wfsLogo from '@/assets/wms-logo.jpg';
 
 const LoadingScreen = () => {
   const [progress, setProgress] = useState(0);
@@ -41,12 +41,12 @@ const LoadingScreen = () => {
       </div>
 
       <div className="relative z-10 text-center space-y-10">
-        {/* WFS Official Logo */}
+        {/* Winsome Model Schools Official Logo */}
         <div className="relative">
           <div className="w-36 h-36 mx-auto rounded-3xl bg-background/95 backdrop-blur-md border-2 border-primary/30 shadow-elegant flex items-center justify-center p-5 animate-scale-in">
             <img 
               src={wfsLogo}
-              alt="Winsome-Forte School Logo"
+              alt="Winsome Model Schools Logo"
               className="w-full h-full object-contain filter drop-shadow-sm"
             />
           </div>
@@ -63,7 +63,7 @@ const LoadingScreen = () => {
         {/* School Name with enhanced styling */}
         <div className="space-y-3 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <h1 className="text-4xl font-display font-semibold text-primary tracking-tight">
-            Winsome-Forte School
+            Winsome Model Schools
           </h1>
           <div className="flex items-center justify-center space-x-2">
             <div className="h-px w-8 bg-gradient-to-r from-transparent to-accent/50"></div>

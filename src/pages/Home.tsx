@@ -81,7 +81,7 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage}
-            alt="Students learning at Winsome-Forte School"
+            alt="Students learning at Winsome Model Schools"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
@@ -92,7 +92,7 @@ const Home = () => {
             <h1 className="text-4xl md:text-6xl font-display font-bold leading-tight">
               Welcome to
               <span className="block text-accent">
-                Winsome-Forte School
+                Winsome Model Schools
               </span>
             </h1>
             
@@ -270,14 +270,7 @@ const Home = () => {
                 ))}
               </div>
 
-              <div className="mt-8">
-                <Link to="/events">
-                  <Button variant="outline" className="w-full">
-                    View All Events
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </div>
+
             </div>
           </div>
         </div>
@@ -292,7 +285,7 @@ const Home = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We welcome prospective families to visit our campus and experience 
-              the Winsome-Forte School community firsthand.
+              the Winsome Model Schools community firsthand.
             </p>
           </div>
 

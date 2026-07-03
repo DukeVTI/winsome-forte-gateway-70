@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import wfsLogo from '@/assets/58004c73-576e-48fa-a140-59b6dca913b4.png';
+import wfsLogo from '@/assets/wms-logo.jpg';
 
 const Footer = () => {
   const quickLinks = [
@@ -27,13 +27,13 @@ const Footer = () => {
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary-foreground/20">
                 <img 
                   src={wfsLogo} 
-                  alt="WFS Logo"
+                  alt="Winsome Model Schools Logo"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
                 <h3 className="text-xl font-display font-semibold">
-                  Winsome-Forte School
+                  Winsome Model Schools
                 </h3>
                 <p className="text-primary-foreground/80 text-sm">
                   Excellence in Education
@@ -118,7 +118,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div className="text-primary-foreground/80 text-sm">
-              © 2024 Winsome-Forte School. All rights reserved.
+              © 2025 Winsome Model Schools. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-200">

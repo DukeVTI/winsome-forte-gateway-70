@@ -7,113 +7,87 @@ import {
   Play, 
   ArrowRight, 
   BookOpen, 
-  Microscope, 
-  Palette, 
-  Trophy, 
   Users,
   Lightbulb,
   X,
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
-import facilitiesLab from '@/assets/facilities-lab.jpg';
+import facilitiesComputerLab from '@/assets/facilities-computer-lab.jpg';
 import facilitiesLibrary from '@/assets/facilities-library.jpg';
+import campusCourtyard from '@/assets/campus-courtyard-1.jpg';
+import campusCorridor from '@/assets/campus-corridor.jpg';
 
 const Facilities = () => {
   const [selectedGallery, setSelectedGallery] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  // Trimmed to facilities we have real photos/evidence for. Add back Sports, Arts, or Science
+  // categories once Duke/the client confirms those spaces exist and sends photos.
   const facilityCategories = [
     {
-      title: "Academic Spaces",
-      description: "Modern classrooms and learning environments",
+      title: "Classrooms",
+      description: "Multi-storey classroom blocks with covered walkways",
       icon: BookOpen,
       color: "text-primary"
     },
     {
-      title: "Science Labs", 
-      description: "State-of-the-art research facilities",
-      icon: Microscope,
-      color: "text-accent"
-    },
-    {
-      title: "Arts & Culture",
-      description: "Creative studios and performance venues", 
-      icon: Palette,
-      color: "text-gold"
-    },
-    {
-      title: "Sports & Fitness",
-      description: "Athletic facilities and wellness centers",
-      icon: Trophy,
-      color: "text-primary"
-    },
-    {
-      title: "Library & Resources",
-      description: "Comprehensive learning resource center",
-      icon: Users,
-      color: "text-accent"
-    },
-    {
-      title: "Innovation Hub",
-      description: "Technology and maker spaces",
+      title: "Computer Lab",
+      description: "Dedicated computer studies workspace",
       icon: Lightbulb,
+      color: "text-accent"
+    },
+    {
+      title: "Library",
+      description: "Well-stocked reading and research space",
+      icon: Users,
       color: "text-gold"
     }
   ];
 
+  // NOTE: The original template invented a science lab (fume hoods, digital microscopy) and an
+  // arts/performance center (400-seat auditorium, recording studio) with no real photos to back them up.
+  // Replaced below with the facilities we actually have photos of. Confirm with Duke/the client whether
+  // Winsome Model Schools has a dedicated science lab or arts space before adding those sections back.
   const facilityDetails = [
     {
-      id: "science-labs",
-      title: "Science Laboratories", 
-      description: "Our cutting-edge science laboratories provide students with hands-on learning experiences in chemistry, physics, biology, and environmental science.",
+      id: "computer-lab",
+      title: "Computer Laboratory",
+      description: "Our computer laboratory gives students hands-on experience with technology as part of their regular curriculum, in a dedicated, organized workspace.",
       features: [
-        "Advanced digital microscopy equipment",
-        "Fume hoods and safety systems", 
-        "Interactive whiteboards and displays",
-        "Collaborative workstations for group projects"
+        "Individual workstations for hands-on practice",
+        "Structured computer studies curriculum",
+        "Supervised, organized lab sessions",
+        "Technology skills built from an early age"
       ],
-      images: [facilitiesLab, facilitiesLab, facilitiesLab],
-      mainImage: facilitiesLab
+      images: [facilitiesComputerLab, facilitiesComputerLab, facilitiesComputerLab],
+      mainImage: facilitiesComputerLab
     },
     {
       id: "library",
-      title: "Learning Resource Center",
-      description: "A modern library designed as a hub for research, collaboration, and independent study with extensive digital and physical collections.",
+      title: "Library",
+      description: "Our library gives students access to a well-stocked collection of books, encouraging a culture of reading and independent research from an early age.",
       features: [
-        "Over 50,000 books and digital resources",
-        "Quiet study zones and collaboration areas",
-        "Research assistance and tutoring support", 
-        "Maker space with 3D printers and tools"
+        "A wide range of books for all age groups",
+        "A dedicated space for quiet reading and study",
+        "Encourages independent research skills",
+        "Regularly maintained and organized collection"
       ],
       images: [facilitiesLibrary, facilitiesLibrary, facilitiesLibrary],
       mainImage: facilitiesLibrary
     },
     {
-      id: "classrooms",
-      title: "Smart Classrooms",
-      description: "[FACILITY_PLACEHOLDER: Modern, technology-equipped classrooms that foster interactive and engaging learning experiences.]",
+      id: "campus",
+      title: "Campus & Classrooms",
+      description: "Our multi-storey campus in Itoki, Ifo provides classrooms, corridors, and open courtyard spaces designed to keep learning organized, safe, and comfortable.",
       features: [
-        "[FEATURE_PLACEHOLDER: Interactive smartboards in every room]",
-        "[FEATURE_PLACEHOLDER: Flexible seating arrangements]",
-        "[FEATURE_PLACEHOLDER: High-speed internet connectivity]",
-        "[FEATURE_PLACEHOLDER: Climate-controlled environment]"
+        "Multi-storey classroom blocks",
+        "Covered walkways connecting all classrooms",
+        "Open courtyard for assembly and recreation",
+        "Secure, gated compound"
       ],
-      images: ["[CLASSROOM_IMG_1]", "[CLASSROOM_IMG_2]", "[CLASSROOM_IMG_3]"],
-      mainImage: "[CLASSROOM_MAIN_IMG]"
-    },
-    {
-      id: "arts-center",
-      title: "Arts & Performance Center", 
-      description: "[FACILITY_PLACEHOLDER: Inspiring spaces for visual arts, music, drama, and creative expression.]",
-      features: [
-        "[FEATURE_PLACEHOLDER: Professional-grade art studios]",
-        "[FEATURE_PLACEHOLDER: 400-seat auditorium with full lighting]",
-        "[FEATURE_PLACEHOLDER: Music practice rooms and recording studio]",
-        "[FEATURE_PLACEHOLDER: Gallery space for student exhibitions]"
-      ],
-      images: ["[ARTS_IMG_1]", "[ARTS_IMG_2]", "[ARTS_IMG_3]"],
-      mainImage: "[ARTS_MAIN_IMG]"
+      images: [campusCourtyard, campusCorridor, campusCourtyard],
+      mainImage: campusCourtyard
     }
   ];
 
@@ -167,7 +141,7 @@ const Facilities = () => {
               World-Class Learning Spaces
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Every space at WFS is thoughtfully designed to enhance the educational experience.
+              Every space at Winsome Model Schools is thoughtfully designed to enhance the educational experience.
             </p>
           </div>
 
@@ -215,10 +189,10 @@ const Facilities = () => {
                       Campus Video Tour
                     </h3>
                     <p className="text-blue-100">
-                      [FACILITY_TOUR_VIDEO.mp4]
+                      Video tour coming soon
                     </p>
                     <Badge variant="secondary" className="mt-2">
-                      15 minutes
+                      Coming Soon
                     </Badge>
                   </div>
                 </div>
@@ -227,7 +201,7 @@ const Facilities = () => {
 
             <p className="text-muted-foreground">
               Experience our campus virtually, featuring guided tours of all major facilities, 
-              student testimonials, and behind-the-scenes looks at daily life at WFS.
+              student testimonials, and behind-the-scenes looks at daily life at Winsome Model Schools.
             </p>
           </div>
         </div>
