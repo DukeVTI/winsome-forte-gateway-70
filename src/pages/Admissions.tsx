@@ -444,6 +444,205 @@ const Admissions = () => {
                             <FormLabel>Additional Notes or Questions (Optional)</FormLabel>
                             <FormControl>
                               <Textarea 
+                                placeholder="Share any additional information, specific questions, or special circumstances we should know                     </FormItem>
+                          )}
+                        />
+
+                        <FormField
+                          control={form.control}
+                          name="dateOfBirth"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Date of Birth *</FormLabel>
+                              <FormControl>
+                                <Input type="date" {...field} />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <FormField
+                          control={form.control}
+                          name="intendedEntry"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Intended Entry Year/Term *</FormLabel>
+                              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                <FormControl>
+                                  <SelectTrigger>
+                                    <SelectValue placeholder="Select entry term" />
+                                  </SelectTrigger>
+                                </FormControl>
+                                <SelectContent>
+                                  <SelectItem value="fall-2024">Fall 2024</SelectItem>
+                                  <SelectItem value="spring-2025">Spring 2025</SelectItem>
+                                  <SelectItem value="fall-2025">Fall 2025</SelectItem>
+                                </SelectContent>
+                              </Select>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+
+                        <FormField
+                          control={form.control}
+                          name="currentGrade"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Current Grade Level *</FormLabel>
+                              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                <FormControl>
+                                  <SelectTrigger>
+                                    <SelectValue placeholder="Select grade level" />
+                                  </SelectTrigger>
+                                </FormControl>
+                                <SelectContent>
+                                  <SelectItem value="pre-k">Pre-K</SelectItem>
+                                  <SelectItem value="kindergarten">Kindergarten</SelectItem>
+                                  <SelectItem value="grade-1">Grade 1</SelectItem>
+                                  <SelectItem value="grade-2">Grade 2</SelectItem>
+                                  <SelectItem value="grade-3">Grade 3</SelectItem>
+                                  <SelectItem value="grade-4">Grade 4</SelectItem>
+                                  <SelectItem value="grade-5">Grade 5</SelectItem>
+                                  <SelectItem value="grade-6">Grade 6</SelectItem>
+                                  <SelectItem value="grade-7">Grade 7</SelectItem>
+                                  <SelectItem value="grade-8">Grade 8</SelectItem>
+                                  <SelectItem value="grade-9">Grade 9</SelectItem>
+                                  <SelectItem value="grade-10">Grade 10</SelectItem>
+                                  <SelectItem value="grade-11">Grade 11</SelectItem>
+                                  <SelectItem value="grade-12">Grade 12</SelectItem>
+                                </SelectContent>
+                              </Select>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Parent Information */}
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-display font-semibold text-primary border-b border-border pb-2">
+                        Parent/Guardian Information
+                      </h3>
+                      
+                      <FormField
+                        control={form.control}
+                        name="parentName"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Parent/Guardian Full Name *</FormLabel>
+                            <FormControl>
+                              <Input placeholder="Enter parent/guardian name" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <FormField
+                          control={form.control}
+                          name="parentEmail"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Email Address *</FormLabel>
+                              <FormControl>
+                                <Input type="email" placeholder="parent@example.com" {...field} />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+
+                        <FormField
+                          control={form.control}
+                          name="parentPhone"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Phone Number *</FormLabel>
+                              <FormControl>
+                                <Input type="tel" placeholder="(555) 123-4567" {...field} />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
+
+                      <FormField
+                        control={form.control}
+                        name="address"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Address (Optional)</FormLabel>
+                            <FormControl>
+                              <Input placeholder="Street address, City, State, ZIP" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
+
+                    {/* Additional Information */}
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-display font-semibold text-primary border-b border-border pb-2">
+                        Additional Information
+                      </h3>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <FormField
+                          control={form.control}
+                          name="previousSchool"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Previous School (Optional)</FormLabel>
+                              <FormControl>
+                                <Input placeholder="Name of previous school" {...field} />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+
+                        <FormField
+                          control={form.control}
+                          name="programInterest"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Program Interest *</FormLabel>
+                              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                <FormControl>
+                                  <SelectTrigger>
+                                    <SelectValue placeholder="Select program" />
+                                  </SelectTrigger>
+                                </FormControl>
+                                <SelectContent>
+                                  <SelectItem value="nursery">Nursery Program</SelectItem>
+                                  <SelectItem value="primary">Primary School</SelectItem>
+                                  <SelectItem value="secondary">Secondary School</SelectItem>
+                                  <SelectItem value="stem">STEM Track</SelectItem>
+                                  <SelectItem value="arts">Arts & Humanities Track</SelectItem>
+                                </SelectContent>
+                              </Select>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
+
+                      <FormField
+                        control={form.control}
+                        name="notes"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Additional Notes or Questions (Optional)</FormLabel>
+                            <FormControl>
+                              <Textarea 
                                 placeholder="Share any additional information, specific questions, or special circumstances we should know about..."
                                 className="min-h-[100px]"
                                 {...field} 
