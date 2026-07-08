@@ -272,8 +272,8 @@ const About = () => {
                     loading="lazy"
                   />
                 </div>
-                <CardContent className="p-4 text-center">
-                  <div className="text-accent font-display font-bold">{item.year}</div>
+                <CardContent className="p-4 text-center space-y-2">
+                  <div className="seal-year mx-auto">{item.year}</div>
                   <h3 className="text-sm font-medium text-primary mt-1">{item.title}</h3>
                 </CardContent>
               </Card>
